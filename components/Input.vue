@@ -1,0 +1,31 @@
+<script setup lang="ts">
+withDefaults(defineProps<{
+  type?: string
+  placeholder?: string
+}>(), {
+  type: 'text',
+})
+
+const focused = ref(false)
+</script>
+
+<template>
+  <div :class="['input border w-56 rounded text-sm text-gray-500 bg-gray-100 px-4 py-2', focused ? 'border-indigo-700' : 'border-gray-100' ]">
+    <div v-if="$slots.prefix" class="input-prefix">
+      <slot name="prefix" />
+    </div>
+    <input class="w-full h-full bg-transparent focus:outline-none" :type="type" :placeholder="placeholder" @focus="focused = true" @blur="focused = false">
+  </div>
+</template>
+
+<style lang="less">
+.input {
+  display: flex;
+  align-items: center;
+
+  &-prefix {
+    display: inline-block;
+    padding-right: 4px;
+  }
+}
+</style>
