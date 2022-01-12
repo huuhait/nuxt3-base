@@ -3,19 +3,30 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
-    "start": "node .output/server/index.mjs"
+    "start": "NODE_ENV=production node .output/server/index.mjs"
   },
   "dependencies": {
-    "pinia": "^2.0.9"
+    "@antv/g2": "^4.1.37",
+    "@headlessui/vue": "^1.4.2",
+    "@types/country-list": "^2.1.0",
+    "date-fns": "^2.28.0",
+    "mitt": "^3.0.0",
+    "pinia": "^2.0.9",
+    "qrcode": "^1.5.0",
+    "swiper": "^7.4.1",
+    "vue-class-component": "^8.0.0-rc.1",
+    "vue-property-decorator": "^10.0.0-rc.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.14.2",
     "@iconify-json/carbon": "^1.0.12",
     "@iconify-json/twemoji": "^1.0.2",
     "@pinia/nuxt": "^0.1.8",
-    "@unocss/nuxt": "^0.20.1",
     "@vueuse/nuxt": "^7.4.2",
     "eslint": "^8.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "nuxt-windicss": "^2.2.2",
     "nuxt3": "latest",
     "typescript": "^4.5.4"
   },
@@ -23,6 +34,19 @@
     "overrides": {
       "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
       "@nuxt/kit-edge": "latest"
+    }
+  },
+  "resolutions": {
+    "resolve": "1.20.0"
+  },
+  "vite": {
+    "optimizeDeps": {
+      "include": [
+        "mitt",
+        "pinia/dist/pinia.mjs",
+        "vue",
+        "vue-router"
+      ]
     }
   }
 }

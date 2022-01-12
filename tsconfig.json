@@ -1,3 +1,25 @@
 {
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "strict": true,
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "typeRoots": [
+      "./types",
+      "node_modules/@types",
+    ],
+    "types": [
+      "@pinia/nuxt",
+      "vite/client",
+      "vue-i18n",
+    ]
+  }
 }
