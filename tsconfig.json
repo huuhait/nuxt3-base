@@ -19,7 +19,6 @@
     "types": [
       "@pinia/nuxt",
       "vite/client",
-      "vue-i18n",
     ]
   }
 }
