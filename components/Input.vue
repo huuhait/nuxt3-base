@@ -10,7 +10,7 @@ const focused = ref(false)
 </script>
 
 <template>
-  <div :class="['input border w-56 rounded text-sm text-gray-500 bg-gray-100 px-4 py-2', focused ? 'border-indigo-700' : 'border-gray-100' ]">
+  <div :class="['input border rounded text-sm px-4 py-2', { 'border-blue-400': focused } ]">
     <div v-if="$slots.prefix" class="input-prefix">
       <slot name="prefix" />
     </div>
