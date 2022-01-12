@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { usePublicStore } from '~/stores/public'
+
 const products = ref([{
   id: 1,
   imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',

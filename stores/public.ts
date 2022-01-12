@@ -6,9 +6,19 @@ export const usePublicStore = defineStore({
     return {
       first_route: ref<boolean>(true),
       headers: ref<{ [key: string]: any }>(),
+      email: ref<string>(''),
+      password: ref<string>(''),
     }
   },
+  getters: {
+    isAuthenticated(): boolean {
+      return !!this.email
+    },
+  },
   actions: {
+    Login() {
+      this.email = ''
+    },
   },
 })
 

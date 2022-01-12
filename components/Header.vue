@@ -36,7 +36,7 @@ import defineComponent from './Header.vue';
       <div class="h-full flex items-center justify-end">
         <div class="w-full h-full flex items-center">
           <div class="w-full pr-12 h-full flex items-center">
-            <Input placeholder="Search">
+            <Input v-model="search" placeholder="Search">
               <template #prefix>
                 <div class="text-gray-500 w-4 h-4">
                   <SearchIcon />
@@ -93,6 +93,7 @@ export default defineComponent({
   },
   data() {
     return {
+      search: '',
       xmlns: 'http://www.w3.org/2000/svg',
       xlink: 'http://www.w3.org/1999/xlink',
       profilePhoto: 'https://tuk-cdn.s3.amazonaws.com/assets/components/boxed_layout/bl_1.png',
