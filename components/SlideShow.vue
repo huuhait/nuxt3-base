@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper">
+  <div class="h-fit swiper">
     <div class="swiper-wrapper">
       <div v-for="(banner, index) in banners" :key="index" class="swiper-slide">
         <a :href="banner.url">
