@@ -1,20 +1,91 @@
 <script setup lang="ts">
 import type { Product } from '~/types'
 
-const products = ref<Product[]>([{
-  image_src: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-  name: 'Áo bẩn',
-  price: '$58',
-  color: 'Black',
-}])
+const products = ref<Product[]>([
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+  {
+    id: 1,
+    image_src: 'https://cdn.hoang-phuc.com/media/catalog/product/cache/b5b9c103f0cdba784a8ed454408448a1/3/5/351879w-a00-1.jpg',
+    name: 'Kappa quần shorts thể thao nam 35187BW 005',
+    price: '58',
+  },
+])
 </script>
 
 <template>
-  <div class="bg-white">
-    <div class="container mx-auto px-6 py-16">
-      <div class="grid grid-cols-1 gap-y-10 gap-x-6 grid-cols-4">
-        <ProductItem v-for="(product, index) in products" :key="index" :product="product" />
-      </div>
-    </div>
+  <div class="block">
+    <SlideShow />
+    <ProductList :products="products" />
   </div>
 </template>
