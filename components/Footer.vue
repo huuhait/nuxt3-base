@@ -99,7 +99,7 @@
 
       <div class="w-full px-8 border-white border rounded-md flex flex-col justify-start md:flex-row md:justify-between lg:justify-center gap-2 md:gap-20 py-6">
         <p class="text-sm leading-none text-gray-300">
-          USA 800 Bolystan street,2475,Bostan MA
+          Nguyễn Hữu Hà
         </p>
         <div class="flex justify-start gap-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e2e8f0" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -108,7 +108,7 @@
             <polyline points="3 7 12 13 21 7" />
           </svg>
           <p class="text-sm leading-none text-gray-300">
-            mail@smrush .com
+            hanhph13462@fpt.edu.vn
           </p>
         </div>
       </div>
